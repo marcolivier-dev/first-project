@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(background.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    
+}
+.navbar h1{
+    color: #fff;
+    font-weight: 700;
+}
+.navbar a{
+    margin: 0 15px 0 30px ;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .1s;
+    position: relative;
+}
+.navbar .login-btn{
+    border: 2px solid #fff;
+    padding:  7px 28px;
+    border-radius: 7px;
+}
+
+.navbar .login-btn:hover{
+    background: #fff;
+    color: black;
+    
+    
+}
+.navbar .under::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+.navbar .under:hover::before{
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.wrapper{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}    
+
+.wrapper form{
+    width: 330px;
+    border: 1px solid smokewhite;
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px;
+    box-shadow: -30px -10px 30px -10px white;
+    backdrop-filter: blur(20px);
+    
+}
+.wrapper h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.wrapper .input-content{
+    margin: 20px 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    position: relative;
+
+}
+.input-content input{
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    
+}
+.input-content i{
+    position: absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+.input-content input::placeholder{
+    color: black;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.wrapper .forgot-remenber{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 20px 0;
+}
+.forgot-remenber input{
+    margin-right: 5px;
+}
+.forgot-remenber a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+.forgot-remenber a:hover {
+    text-decoration: underline;
+}
+.wrapper .btn {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+.wrapper .account-registrer{
+    margin: 15px 0 30px;
+    text-align: center;
+}
+.account-registrer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.account-registrer a:hover{
+    text-decoration: underline;
+}
